@@ -1,0 +1,28 @@
+{
+  "name": "rocking-legend-opus-converter",
+  "version": "1.0.0",
+  "description": "Converts OPUS files to OGG files for Rocking Legend",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "bin": "index.js",
+  "pkg": {
+    "scripts": [
+      "index.js"
+    ],
+    "assets": [
+      "node_modules/**",
+      "node_modules/ffmpeg-static/ffmpeg.exe"
+    ],
+    "targets": ["node16-win-x64"]
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cli-progress": "^3.12.0",
+    "ffmpeg": "^0.0.4",
+    "ffmpeg-static": "^5.2.0",
+    "simple-vdf": "^1.1.1"
+  }
+}
